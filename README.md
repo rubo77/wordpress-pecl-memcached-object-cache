@@ -1,5 +1,9 @@
 [![Build Status](https://travis-ci.org/tollmanz/wordpress-memcached-backend.png?branch=master)](https://travis-ci.org/tollmanz/wordpress-memcached-backend)
 
+## :exclamation: A note on plugin status
+
+Since this plugin was last updated, WordPress has introduced a variety of caching API improvements such as [wp_cache_get_multiple](https://make.wordpress.org/core/2020/08/11/introduce-wp_cache_get_multiple/). This plugin has not been updated to take advantage of these new functions, because Human Made now uses Redis for our own caching backend. It should still work, but it will not be as efficient as it could be given the functionality in the latest versions of WordPress.
+
 ## Overview
 
 This project is a WordPress object cache backend that implements all available methods in the [Memcached PECL extension](http://www.php.net/manual/en/class.memcached.php). For a detailed account of how this differs from a Memcache PECL backend (note the inclusion/exclusion of the "d"), read the [article I wrote on the topic](http://tollmanz.com/wordpress-memcached-object-cache/).
